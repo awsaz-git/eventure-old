@@ -1,0 +1,454 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+    font-family: 'DM Sans';
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 3vh;
+}
+
+#backgroundImage {
+    display: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.eventInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.image {
+    margin-top: 3vh;
+    width: 300px;
+    height: 300px;
+    border: 0;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.eventInfo2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    width: 300px;
+    margin-top: 2vh;
+}
+
+.eventInfoTop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.eventInfoBottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.eventTitle {
+    font-size: 20px;
+}
+
+.eventDescription {
+    text-align: center;
+    font-size: 14px;
+    width: 300px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.date {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.fee {
+    padding: 5px;
+}
+
+.time {
+    padding: 5px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+#enrollButton {
+    padding: 12px 80px;
+    font-size: 20px;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+}
+
+.size {
+    margin-left: 10px;
+}
+
+.profileImage {
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.organizerSection {
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdownItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 14px;
+    padding-right: 4px;
+}
+
+.name {
+    font-size: 22px;
+}
+
+.subtitle {
+    font: 8px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdownMenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    align-items: start;
+    justify-content: start;
+    bottom: 25px;
+    left: -100px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+    width: 225px;
+    max-height: 250px;
+    overflow-y: auto;
+    z-index: 10;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.dropdownMenu::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (min-width: 750px) {
+    h2 {
+        font-size: 32px;
+        margin-top: 3vh;
+    }
+
+    .eventInfo {
+        margin-top: 8vh;
+    }
+
+    .image {
+        width: 500px;
+        height: 400px;
+    }
+
+    .eventDescription {
+        width: 500px;
+    }
+
+    .eventInfo2 {
+        width: 500px;
+        font-size: 20px;
+    }
+
+    .eventTitle {
+        font-size: 26px;
+    }
+
+    .eventDescription {
+        font-size: 19px;
+    }
+
+    .date {
+        padding: 7px;
+        margin-right: 7px;
+    }
+
+    .fee {
+        padding: 7px;
+    }
+
+    .time {
+        padding: 7px;
+    }
+
+    .icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    #enrollButton {
+        padding: 16px 95px;
+        font-size: 22px;
+    }
+
+    .profileImage {
+        width: 65px;
+        height: 65px;
+    }
+
+    .dropdownMenu {
+        width: 250px;
+        max-height: 250px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-height: 1080px) {
+    .parent {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    #backgroundImage {
+        display: block;
+        position: fixed;
+        margin: auto;
+        width: auto;
+        height: 100vh;
+        top: 0px;
+
+        left: -200px;
+        transition: all 0.8s ease;
+    }
+
+    .content {
+        position: absolute;
+        top: 0px;
+        height: 100vh;
+        width: 75vw;
+        justify-content: start;
+        background-color: white;
+
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-top-right-radius: 0px;
+        box-shadow: 0 0 6px rgb(0, 0, 0, 0.3);
+
+        transition: all 0.8s ease;
+    }
+
+    .wideScreen {
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .rightSide {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image {
+        width: 300px;
+        height: 250px;
+        margin-top: 0px;
+    }
+
+    .eventTitle {
+        font-size: 20px;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .eventDescription {
+        text-align: left;
+        width: 250px;
+    }
+
+    .eventInfo {
+        justify-content: start;
+        align-items: start;
+        width: 300px;
+        margin-top: 0px;
+    }
+
+    .eventInfo2 {
+        width: 300px;
+    }
+
+    .date {
+        padding: 5px;
+        margin-right: 5px;
+    }
+
+    .fee {
+        padding: 5px;
+    }
+
+    .time {
+        padding: 5px;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    #enrollButton {
+        margin: 0px;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row {
+        margin-top: 6vh;
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .organizerSection {
+        margin: 0px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .content {
+        width: 65vw;
+    }
+
+    .wideScreen {
+        display: flex;
+        flex-direction: row;
+        width: 75%;
+        justify-content: space-between;
+        margin-top: 7vh;
+    }
+
+    .rightSide {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image {
+        width: 350px;
+        height: 275px;
+    }
+
+    .eventTitle {
+        font-size: 25px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .eventDescription {
+        text-align: left;
+        width: 350px;
+    }
+
+    .eventInfo {
+        justify-content: start;
+        align-items: start;
+        width: 300px;
+    }
+
+    .eventInfo2 {
+        width: 350px;
+    }
+
+    .date {
+        padding: 5px;
+        margin-right: 5px;
+    }
+
+    .fee {
+        padding: 5px;
+    }
+
+    .time {
+        padding: 5px;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .size {
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+
+    #enrollButton {
+        margin: 0px;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row {
+        margin-top: 10vh;
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .organizerSection {
+        margin: 0px;
+    }
+}

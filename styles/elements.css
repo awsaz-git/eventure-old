@@ -1,0 +1,223 @@
+.buttonType1 {
+    color: white;
+    background-color: #242565;
+
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 25px;
+
+    box-shadow: 0 0 6px rgb(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.buttonType1:hover {
+    color: white;
+    background-color: #21225c;
+    box-shadow: 0 0 6px rgb(0, 0, 0, 0.45);
+    cursor: pointer;
+}
+
+.buttonType1:active {
+    color: white;
+    background-color: #1f2058;
+    box-shadow: 0 0 6px rgb(0, 0, 0, 0.3);
+    transform: translateY(1.5px)
+}
+
+.textField1 {
+    outline: none;
+    border: none;
+    color: white;
+    background-color: transparent;
+    width: 60px;
+
+    font-family: 'DM Sans';
+    border-bottom: 2px solid #7778B0;
+    transition: all 0.5s ease;
+}
+
+.textField1:hover {
+    width: 63px;
+}
+
+
+.textField1:focus {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #7778B0;
+    width: 72px;
+}
+
+.textField2 {
+    color: black;
+    background-color: transparent;
+    width: 210px;
+    height: 45px;
+    border-radius: 25px;
+    font-size: 19px;
+    padding-left: 10px;
+
+    font-family: 'DM Sans';
+    transition: all 0.7s ease;
+}
+
+.textField2:hover {
+    border-radius: 15px;
+}
+
+
+.textField2:focus {
+    border-radius: 11px;
+}
+
+.select {
+    font-family: 'DM Sans';
+    font-size: 11px;
+
+    width: 35vw;
+    padding: 5px 8px;
+    margin-bottom: 10px;
+
+    border: 0px solid #F2F4FF;
+    border-radius: 25px;
+    outline: none;
+
+    background-color: #F2F4FF;
+    color: #242565;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.select2 {
+    outline: none;
+    border: none;
+    background-color: #242565;
+    color: white;
+    width: 60px;
+
+    font-family: 'DM Sans';
+    border-bottom: 2px solid #7778B0;
+    transition: all 0.5s ease;
+
+}
+
+.select2:hover {
+    width: 63px;
+}
+
+
+.select2:focus {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #7778B0;
+    width: 72px;
+}
+
+#date {
+    font-family: 'DM Sans';
+}
+
+#date::-webkit-calendar-picker-indicator {
+    filter: invert(100%);
+}
+
+.buttonType3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 15x 15px;
+    width: 250px;
+    height: 100px;
+    border: 2px solid black;
+    color: #000000c6;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+
+    transition: all 0.7s ease;
+}
+
+.buttonType3:hover {
+    background-color: #d1d1d126;
+}
+
+
+.buttonType3:focus {
+    background-color: #d1d1d10c;
+}
+
+.file {
+    display: none;
+}
+
+@media screen and (min-width: 750px) {
+    .textField1 {
+        font-size: 16px;
+        width: 13vw;
+    }
+
+    .textField1:hover {
+        width: 13.5vw;
+    }
+
+    .textField1:focus {
+        width: 14.5vw;
+    }
+
+    .select {
+        font-size: 18px;
+
+        width: 30vw;
+        padding: 10px 20px;
+        margin-right: 20px;
+    }
+
+    .select2 {
+        font-size: 16px;
+        width: 13vw;
+    }
+
+    .select2:hover {
+        width: 13.5vw;
+    }
+
+    .select2:focus {
+        width: 14.5vw;
+    }
+
+    .buttonType3 {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .select {
+        font-size: 18px;
+
+        width: 20vw;
+        padding: 10px 20px;
+        margin-right: 20px;
+    }
+
+    .textField2 {
+        width: 275px;
+        height: 40px;
+        border-radius: 25px;
+        font-size: 18px;
+        padding-left: 12px;
+    }
+
+    .textField2:hover {
+        border-radius: 20px;
+    }
+
+
+    .textField2:focus {
+        border-radius: 11px;
+    }
+}

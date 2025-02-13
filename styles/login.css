@@ -1,0 +1,157 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+    font-family: 'DM Sans';
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#backgroundImage {
+    position: fixed;
+    margin: auto;
+    width: 115%;
+    top: 0;
+
+    transition: all 0.8s ease;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 200px;
+    background-color: white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: 0 -6 6px rgb(0, 0, 0, 0.3);
+
+    transition: all 0.8s ease;
+}
+
+.welcomeText {
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+.loginForm {
+    margin-top: 35px;
+}
+
+.passwordField {
+    margin-top: 15px;
+}
+
+.forgotPassword {
+    color: #3b3b3b;
+    margin-top: 2.5px;
+    font-size: 15px;
+}
+
+#loginButton {
+    margin-top: 25px;
+    padding: 10px 65px;
+    font-size: 16px;
+}
+
+.signupSection {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.label {
+    font-size: 18px;
+}
+
+
+@media screen and (min-width: 350px) {
+    .content {
+        top: 250px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    #backgroundImage {
+        width: 100%;
+    }
+
+    .content {
+        top: 450px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .parent {
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    #backgroundImage {
+        position: fixed;
+        width: auto;
+        height: 100vh;
+        top: 0px;
+        left: -100px;
+    }
+
+    .content {
+        position: absolute;
+        top: 0px;
+        height: 100vh;
+        width: 45vw;
+        justify-content: start;
+
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-top-right-radius: 0px;
+        box-shadow: 0 0 6px rgb(0, 0, 0, 0.3);
+    }
+
+    .welcomeText {
+        font-size: 35px;
+        margin-top: 50px;
+        margin-bottom: 15vh;
+    }
+
+    .forgotPassword {
+        font-size: 18px;
+    }
+
+    #loginButton {
+        margin-top: 35px;
+        padding: 15px 90px;
+        font-size: 19px;
+
+    }
+
+    .label {
+        font-size: 20px;
+    }
+
+    .signupSection {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1200px) {}
+
+@media screen and (min-width: 1920px) {
+    .content {
+        width: 70vw;
+    }
+}
